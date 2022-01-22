@@ -4,7 +4,7 @@ html {
   background-color: #ededed;
 }
 
-body {
+.hbody {
   margin: 0;
   display: grid;
   grid-template-columns: 100%;
@@ -12,75 +12,10 @@ body {
   grid-template-areas:
     "ih"
     "main"
-    "sect1"
-    "sect2"
-    "sect3"
+    "hsect1"
+    "hsect2"
+    "hsect3"
     "footer";
-}
-
-.ih {
-  grid-area: ih;
-  display: grid;
-  height: 100%;
-  align-self: center;
-  background-color: #101010;
-  padding-left: 10px;
-}
-
-.ih h1 {
-  color: white;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 30px;
-  font-weight: 200;
-  font-family: "Montserrat", sans-serif;
-}
-
-.ih h1 span {
-  color: white;
-  font-weight: 800;
-}
-
-header {
-  grid-area: header;
-  background-color: #101010;
-  /* text-align: center; */
-  /* border: solid green; */
-}
-
-.navbar li:last-child {
-  padding-right: 20px;
-}
-
-.navbar {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  float: right;
-}
-
-.navbar li,
-a {
-  text-decoration: none;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  display: table;
-  float: left;
-  padding: 5px;
-  font-size: 25px;
-}
-
-/* .navbar a { */
-/* border: solid white; */
-/* margin: 0px; */
-/* } */
-
-footer {
-  grid-area: footer;
-  background-color: #101010;
-  align-self: center;
 }
 
 .informations {
@@ -107,7 +42,7 @@ footer {
 }
 
 @media only screen and (min-width: 850px) {
-  body {
+  .hbody {
     /* margin: 0; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);

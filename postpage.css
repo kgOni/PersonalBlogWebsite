@@ -1,6 +1,7 @@
 body,
 html {
   height: 100vh;
+  background-color: #ededed;
 }
 
 body {
@@ -16,112 +17,93 @@ body {
     "sect3"
     "footer";
 }
-
-header {
-  grid-area: header;
-  background-color: #101010;
-  /* font-size: 5px; */
-  /* justify-content:space-between; */
-  /* border: solid black; */
+.postmain {
+  grid-area: main;
   text-align: center;
+  font-family: serif;
+  font-size: 25px;
+  padding: 10px 10px 0px 10px;
 }
 
-.ih {
-  grid-area: ih;
-  display: grid;
-  height: 100%;
-  align-self: center;
-  background-color: #101010;
+.samplepost h2 {
+  margin: 0px;
   padding-left: 10px;
 }
 
-.ih h1 {
-  color: white;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 30px;
-  font-weight: 200;
-  font-family: "Montserrat", sans-serif;
+.postreleasdate {
+  padding-left: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
-.ih h1 span {
-  color: white;
-  font-weight: 800;
-}
-
-.navbar li:last-child {
-  padding-right: 20px;
-}
-
-.navbar {
-  height: 100%;
-  /* border: solid blue; */
-  display: flex;
-  align-items: center;
-  float: right;
-  /* align-items: ; */
-  /* justify-content: space-between; */
-}
-
-.navbar li,
-a {
-  text-decoration: none;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  display: table;
-  float: left;
-  padding: 5px;
-  font-size: 25px;
-}
-
-.navbar a {
-  /* border: solid black; */
-  /* background-color: black; */
-  border-radius: 15px;
-  margin: 0px;
+.postmain h1 {
+  border-bottom: 0.5px solid black;
 }
 
 .samplepost {
-  grid-area: sect1;
-  background-color: green;
-}
-.heading {
-  grid-area: sect2;
-  background-color: blue;
-}
-.subheading {
-  grid-area: sect3;
-  background-color: gray;
-}
-main {
-  grid-area: main;
-  background-color: red;
+  text-align: left;
+  text-decoration: none;
 }
 
-footer {
-  grid-area: footer;
-  background-color: #588ec3;
+.samplepost p {
+  padding: 10px;
+}
+
+.samplepost p:last-child {
+  border: 0.5px solid black;
+  padding: 10px;
+}
+
+.heading {
+  grid-area: sect1;
+  padding: 10px;
+}
+
+.headingcontainer {
+  font-size: 25px;
+}
+
+.subheading {
+  grid-area: sect2;
+  font-size: 25px;
+  padding: 10px;
 }
 
 @media only screen and (min-width: 850px) {
   body {
     margin: 0;
     display: grid;
-    grid-template-columns: 20% auto;
-    grid-template-rows: 5% 2fr 1fr 1fr 1fr 5%;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 5% auto 2fr auto 5%;
     grid-template-areas:
       "ih header"
       "sidebar main"
       "sidebar sect1"
       "sidebar sect2"
-      "sidebar sect3"
-      "sidebar footer ";
+      "footer footer ";
   }
 }
 
 aside {
   grid-area: sidebar;
-  background-color: #007fff;
+  background-color: #ededed;
+  margin: 10px 0px 10px 0px;
+  border-right: 0.5px solid black;
+}
+
+.postsidebar {
+  margin: 10px;
+  padding: 10px;
+}
+
+.archvies {
+  background-color: #e0e0e0;
+  padding: 5px;
+  font-size: 15px;
+  list-style: none;
+}
+.about {
+  background-color: #e0e0e0;
+  padding: 5px;
 }

@@ -1,9 +1,6 @@
 .headline {
   grid-area: hmain;
-  /* background-color: green; */
-  /* text-align: center; */
   align-self: center;
-  /* justify-self: center; */
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -48,8 +45,11 @@
 
 .headlinepic {
   grid-area: hpic;
-  /* justify-content: stretch; */
   background-image: url(//unsplash.it/800/400);
-  /* width: 800px; */
-  /* height: 300px; */
+}
+
+.link {
+  font-family: serif;
+  color: blue;
+  font-size: 15px;
 }
