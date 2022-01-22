@@ -1,14 +1,15 @@
-
-body, html{
-    height: 100vh;
+body,
+html {
+  height: 100vh;
+  background-color: #ededed;
 }
 
-body{
-    margin: 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(auto, 6);
-    grid-template-areas: 
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(auto, 6);
+  grid-template-areas:
     "ih"
     "main"
     "sect1"
@@ -17,174 +18,93 @@ body{
     "footer";
 }
 
-.content{
-    border: 40px solid black;
-    padding: 0px;
-    margin: 0px;
-    /* padding: 10px; */
+header {
+  grid-area: header;
+  background-color: #101010;
+  text-align: center;
 }
 
-aside{
-    grid-area: sidebar;
-    background-color: #00ffff;
+.ih {
+  grid-area: ih;
+  background-color: #101010;
+}
+.logo {
+  height: 100%;
+  display: table;
+  float: left;
+  padding-left: 10px;
 }
 
-header{
-    grid-area: header;
-    background-color: #101010;
-    /* font-size: 5px; */
-    /* justify-content:space-between; */
-    /* border: solid black; */
-    text-align: center;
+.navbar li:last-child {
+  padding-right: 20px;
 }
 
-.ih{
-    /* border: solid green; */
-    grid-area: ih;
-    background-color: #101010;
-}
-.logo{
-    height: 100%;
-    /* font-size: 100px ; */
-    /* border: solid white; */
-    /* text-align: center; */
-    display: table;
-    float: left;
-    padding-left: 10px;
+.navbar {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  float: right;
 }
 
-.navbar li:last-child{
-    padding-right: 20px;
-}
-
-.navbar{
-    height: 100%;
-    /* border: solid blue; */
-    display: flex;
-    align-items: center;
-    float: right;
-    /* align-items: ; */
-    /* justify-content: space-between; */
-}
-
-.navbar li, a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    display: table;
-    float: left;
-    padding: 5px ;
-    font-size: 20px ;
+.navbar li,
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  display: table;
+  float: left;
+  padding: 5px;
+  font-size: 20px;
 }
 
 .navbar a {
-    /* border: solid black; */
-    /* background-color: black; */
-    border-radius: 15px ;
-    margin: 0px;
+  border-radius: 15px;
+  margin: 0px;
 }
 
-.logo h1 a{
-    color: white;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 20px;
-    font-weight: 200;
-    font-family: 'Montserrat', sans-serif;
+.logo h1 a {
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
 }
 
-.logo h1 a span{
-    color: white;
-    font-weight: 800;
+.logo h1 a span {
+  color: white;
+  font-weight: 800;
 }
 
-.business{
-    padding: 5px;
-    grid-area: sect1;
-    background-color: #ededed;
-    
-}
-.fitness{
-    padding: 5px;
-    grid-area: sect2;
-    /* background-color: #5E86AF; */
-    background-color: #ededed;
-    text-align: center;
-}
-.politics{
-    padding: 5px;
-    grid-area: sect3;
-    background-color: #ededed;
-    text-align: center;
-}
-.headline{
-    padding: 5px;
-    grid-area: main;
-    background-color: #588eC3;
-    text-align: center;
-}
-.contentgroupheadline{
-    border-bottom: 1px solid black;
-    font-family: serif;
-    text-align: center;
-    font-size: 30px;
-    margin: auto;
-    margin-bottom: 10px;
-    padding: 0px;
-}
-.container{
-    border: 0.5px solid black;
-    border-bottom: 1px solid black;
-    margin-bottom: 10px;
-    font-family: serif;
-    /* box-shadow: 2px -2px 5px white;; */
-}
-.contentheadline{
-    text-align: left;
-    text-decoration: underline;
-    font-size: 25PX;
-    margin: 0px;
-    padding-left: 10px;
-}
-.releasdate{
-    font-size: 15px;
-    font-style: italic;
-    text-align:start;
-    margin: 0px;
-    padding-left: 10px;
-}
-.contenttext{
-    /* font-family: serif; */
-    font-size: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    /* height: 200px; */
+footer {
+  grid-area: footer;
+  background-color: #588ec3;
 }
 
-footer{
-    grid-area: footer;
-    background-color: #588eC3;
-}
-
-@media only screen and (min-width: 850px){
-    body{
+@media only screen and (min-width: 850px) {
+  body {
     /* margin: 0; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 7% 30% auto 5%;
-    grid-template-areas: 
-    " ih header header"
-    " main main main "
-    "sect1 sect2 sect3 "
-    " footer footer footer ";
-    }
+    grid-template-rows: 5% auto auto 5%;
+    grid-template-areas:
+      "ih header header "
+      "main main main "
+      "sect1 sect2 sect3 "
+      "footer footer footer ";
+  }
 }
 
 .pic {
-    background-image: url(//unsplash.it/200/200);
-    width: 200px;
-    height: 200px;
-    float: right;
+  background-image: url(//unsplash.it/200/200);
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+aside {
+  grid-area: sidebar;
+  background-color: #00ffff;
 }

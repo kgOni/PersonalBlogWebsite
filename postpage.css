@@ -1,13 +1,14 @@
-body, html{
-    height: 100vh;
+body,
+html {
+  height: 100vh;
 }
 
-body{
-    margin: 0;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(auto, 6);
-    grid-template-areas: 
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(auto, 6);
+  grid-template-areas:
     "ih"
     "main"
     "sect1"
@@ -16,117 +17,117 @@ body{
     "footer";
 }
 
-
 aside {
-    grid-area: sidebar;
-    background-color: #007FFF;
+  grid-area: sidebar;
+  background-color: #007fff;
 }
 
-header{
-    grid-area: header;
-    background-color: #101010;
-    /* font-size: 5px; */
-    /* justify-content:space-between; */
-    /* border: solid black; */
-    text-align: center;
+header {
+  grid-area: header;
+  background-color: #101010;
+  /* font-size: 5px; */
+  /* justify-content:space-between; */
+  /* border: solid black; */
+  text-align: center;
 }
 
-.ih{
-    /* border: solid green; */
-    grid-area: ih;
-    background-color: #101010;
+.ih {
+  /* border: solid green; */
+  grid-area: ih;
+  background-color: #101010;
 }
-.logo{
-    height: 100%;
-    /* font-size: 100px ; */ 
-    /* border: solid white; */
-    /* text-align: center; */
-    display: table;
-    float: left;
-    padding-left: 10px;
-}
-
-.navbar li:last-child{
-    padding-right: 20px;
+.logo {
+  height: 100%;
+  /* font-size: 100px ; */
+  /* border: solid white; */
+  /* text-align: center; */
+  display: table;
+  float: left;
+  padding-left: 10px;
 }
 
-.navbar{
-    height: 100%;
-    /* border: solid blue; */
-    display: flex;
-    align-items: center;
-    float: right;
-    /* align-items: ; */
-    /* justify-content: space-between; */
+.navbar li:last-child {
+  padding-right: 20px;
 }
 
-.navbar li, a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    display: table;
-    float: left;
-    padding: 5px ;
-    font-size: 20px ;
+.navbar {
+  height: 100%;
+  /* border: solid blue; */
+  display: flex;
+  align-items: center;
+  float: right;
+  /* align-items: ; */
+  /* justify-content: space-between; */
+}
+
+.navbar li,
+a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  display: table;
+  float: left;
+  padding: 5px;
+  font-size: 20px;
 }
 
 .navbar a {
-    /* border: solid black; */
-    /* background-color: black; */
-    border-radius: 15px ;
-    margin: 0px;
+  /* border: solid black; */
+  /* background-color: black; */
+  border-radius: 15px;
+  margin: 0px;
 }
 
-.logo h1 a{
-    color: white;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    font-size: 20px;
-    font-weight: 200;
-    font-family: 'Montserrat', sans-serif;
+.logo h1 a {
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
 }
 
-.logo h1 a span{
-    color: white;
-    font-weight: 800;
+.logo h1 a span {
+  color: white;
+  font-weight: 800;
 }
 
-.samplepost{
-    grid-area: sect1;
-    background-color: green;
+.samplepost {
+  grid-area: sect1;
+  background-color: green;
 }
-.heading{
-    grid-area: sect2;
-    background-color: blue;
+.heading {
+  grid-area: sect2;
+  background-color: blue;
 }
-.subheading{
-    grid-area: sect3;
-    background-color: gray;
+.subheading {
+  grid-area: sect3;
+  background-color: gray;
 }
 main {
-    grid-area: main;
-    background-color: red;
+  grid-area: main;
+  background-color: red;
 }
 
 footer {
-    grid-area: footer;
-    background-color: #588EC3;
+  grid-area: footer;
+  background-color: #588ec3;
 }
 
-@media only screen and (min-width: 850px){
-    body{
-        margin: 0;
-        display: grid;
-        grid-template-columns: 20% auto;
-        grid-template-rows: 7% 2fr 1fr 1fr 1fr 5%;
-        grid-template-areas: 
-        "ih header"
-        "sidebar main"
-        "sidebar sect1"
-        "sidebar sect2"
-        "sidebar sect3"
-        "sidebar footer ";
-        }
+@media only screen and (min-width: 850px) {
+  body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 5% 2fr 1fr 1fr 1fr 5%;
+    grid-template-areas:
+      "ih header"
+      "sidebar main"
+      "sidebar sect1"
+      "sidebar sect2"
+      "sidebar sect3"
+      "sidebar footer ";
+  }
 }

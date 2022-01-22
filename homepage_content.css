@@ -1,0 +1,60 @@
+.content {
+  /* border: 80px solid black; */
+  /* padding: 0px; */
+  /* margin: 0px; */
+}
+.business {
+  padding: 5px;
+  grid-area: sect1;
+  background-color: #ededed;
+}
+.sport {
+  padding: 5px;
+  grid-area: sect2;
+  /* background-color: #5E86AF; */
+  background-color: #ededed;
+  text-align: center;
+}
+.politics {
+  padding: 5px;
+  grid-area: sect3;
+  background-color: #ededed;
+  text-align: center;
+}
+.contentgroupheadline {
+  border-bottom: 1px solid black;
+  font-family: serif;
+  text-align: center;
+  font-size: 30px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+.container {
+  border: 0.5px solid black;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  font-family: serif;
+  /* box-shadow: 2px -2px 5px white;; */
+}
+.contentheadline {
+  text-align: left;
+  text-decoration: underline;
+  font-size: 25px;
+  margin: 0px;
+  padding-left: 10px;
+}
+.releasdate {
+  font-size: 15px;
+  font-style: italic;
+  text-align: start;
+  margin: 0px;
+  padding-left: 10px;
+}
+.contenttext {
+  /* font-family: serif; */
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* height: 200px; */
+}

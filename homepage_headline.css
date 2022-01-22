@@ -1,0 +1,55 @@
+.headline {
+  grid-area: main;
+  /* background-color: green; */
+  /* text-align: center; */
+  align-self: center;
+  /* justify-self: center; */
+  padding: 10px;
+  margin-bottom: 30px;
+  border-bottom: 0.5px black solid;
+  border-top: 0.5px black solid;
+}
+
+.healinecontainer {
+  display: grid;
+  justify-content: stretch;
+  grid-template-columns: 2fr 2fr;
+  font-family: serif;
+  box-shadow: 2px -2px 5px white;
+  grid-template-areas:
+    "headline hpic"
+    "hdate hpic"
+    "htext hpic"
+    "htext hpic";
+}
+
+.headlinecontentheadline {
+  text-align: left;
+  text-decoration: underline;
+  font-size: 50px;
+  margin: 0px;
+  padding-left: 10px;
+}
+.headlinereleasedate {
+  grid-area: hdate;
+  font-size: 15px;
+  font-style: italic;
+  text-align: start;
+  margin: 0px;
+  padding-left: 10px;
+}
+.headlinecontenttext {
+  grid-area: htext;
+  font-family: serif;
+  padding-left: 10px;
+  font-size: 25px;
+  margin: 20px 20px 0px 0px;
+}
+
+.headlinepic {
+  grid-area: hpic;
+  /* justify-content: stretch; */
+  background-image: url(//unsplash.it/800/400);
+  /* width: 800px; */
+  /* height: 300px; */
+}
