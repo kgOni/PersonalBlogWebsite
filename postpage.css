@@ -11,6 +11,7 @@ body {
   grid-template-rows: repeat(auto, 6);
   grid-template-areas:
     "ih"
+    "header"
     "main"
     "sect1"
     "sect2"
@@ -70,7 +71,7 @@ body {
   padding: 10px;
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 950px) {
   body {
     margin: 0;
     display: grid;

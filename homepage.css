@@ -11,6 +11,7 @@ html {
   grid-template-rows: repeat(auto, 6);
   grid-template-areas:
     "ih"
+    "header"
     "main"
     "hsect1"
     "hsect2"
