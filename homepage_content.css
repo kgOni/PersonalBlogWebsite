@@ -1,21 +1,15 @@
-.content {
-  /* border: 80px solid black; */
-  /* padding: 0px; */
-  /* margin: 0px; */
-}
-.business {
+.c1business {
   padding: 5px;
   grid-area: hsect1;
   background-color: #ededed;
 }
-.sport {
+.c2sport {
   padding: 5px;
   grid-area: hsect2;
-  /* background-color: #5E86AF; */
   background-color: #ededed;
   text-align: center;
 }
-.politics {
+.c2politics {
   padding: 5px;
   grid-area: hsect3;
   background-color: #ededed;
@@ -59,9 +53,7 @@
   padding-left: 10px;
 }
 .contenttext {
-  /* font-family: serif; */
   font-size: 15px;
   padding-left: 10px;
   padding-right: 10px;
-  /* height: 200px; */
 }

@@ -10,7 +10,7 @@ html {
   grid-template-columns: 100%;
   grid-template-rows: repeat(auto, 6);
   grid-template-areas:
-    "ih"
+    "hl"
     "header"
     "main"
     "hsect1"
@@ -32,7 +32,6 @@ html {
   float: right;
   padding: 0px 5px 0px 5px;
   margin-top: 2px;
-  /* border: green solid; */
 }
 
 .imp p {
@@ -44,12 +43,11 @@ html {
 
 @media only screen and (min-width: 850px) {
   .hbody {
-    /* margin: 0; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 5% auto auto 5%;
     grid-template-areas:
-      "ih header header "
+      "hl header header "
       "hmain hmain hmain "
       "hsect1 hsect2 hsect3 "
       "footer footer footer ";

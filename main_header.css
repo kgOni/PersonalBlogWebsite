@@ -1,5 +1,5 @@
-.ih {
-  grid-area: ih;
+.headerlogo {
+  grid-area: hl;
   display: grid;
   height: 100%;
   align-self: center;
@@ -7,7 +7,7 @@
   padding-left: 10px;
 }
 
-.ih h1 {
+.headerlogo h1 {
   color: white;
   height: 100%;
   display: table-cell;
@@ -17,7 +17,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.ih h1 span {
+.headerlogo h1 span {
   color: white;
   font-weight: 800;
 }
