@@ -18,21 +18,35 @@ body {
     "footer";
 }
 
+.ih {
+  grid-area: ih;
+  display: grid;
+  height: 100%;
+  align-self: center;
+  background-color: #101010;
+  padding-left: 10px;
+}
+
+.ih h1 {
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ih h1 span {
+  color: white;
+  font-weight: 800;
+}
+
 header {
   grid-area: header;
   background-color: #101010;
-  text-align: center;
-}
-
-.ih {
-  grid-area: ih;
-  background-color: #101010;
-}
-.logo {
-  height: 100%;
-  display: table;
-  float: left;
-  padding-left: 10px;
+  /* text-align: center; */
+  /* border: solid green; */
 }
 
 .navbar li:last-child {
@@ -55,32 +69,41 @@ a {
   display: table;
   float: left;
   padding: 5px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
-.navbar a {
-  border-radius: 15px;
-  margin: 0px;
-}
-
-.logo h1 a {
-  color: white;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 20px;
-  font-weight: 200;
-  font-family: "Montserrat", sans-serif;
-}
-
-.logo h1 a span {
-  color: white;
-  font-weight: 800;
-}
+/* .navbar a { */
+/* border: solid white; */
+/* margin: 0px; */
+/* } */
 
 footer {
   grid-area: footer;
-  background-color: #588ec3;
+  background-color: #101010;
+  align-self: center;
+}
+
+.informations {
+  padding-right: 10px;
+}
+
+.informations li {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  display: table;
+  float: right;
+  padding: 0px 5px 0px 5px;
+  margin-top: 2px;
+  /* border: green solid; */
+}
+
+.imp p {
+  color: white;
+  padding-left: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 50;
 }
 
 @media only screen and (min-width: 850px) {
@@ -91,20 +114,8 @@ footer {
     grid-template-rows: 5% auto auto 5%;
     grid-template-areas:
       "ih header header "
-      "main main main "
-      "sect1 sect2 sect3 "
+      "hmain hmain hmain "
+      "hsect1 hsect2 hsect3 "
       "footer footer footer ";
   }
-}
-
-.pic {
-  background-image: url(//unsplash.it/200/200);
-  width: 200px;
-  height: 200px;
-  float: right;
-}
-
-aside {
-  grid-area: sidebar;
-  background-color: #00ffff;
 }

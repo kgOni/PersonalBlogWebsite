@@ -1,10 +1,11 @@
 .headline {
-  grid-area: main;
+  grid-area: hmain;
   /* background-color: green; */
   /* text-align: center; */
   align-self: center;
   /* justify-self: center; */
   padding: 10px;
+  margin-top: 20px;
   margin-bottom: 30px;
   border-bottom: 0.5px black solid;
   border-top: 0.5px black solid;
@@ -15,7 +16,6 @@
   justify-content: stretch;
   grid-template-columns: 2fr 2fr;
   font-family: serif;
-  box-shadow: 2px -2px 5px white;
   grid-template-areas:
     "headline hpic"
     "hdate hpic"

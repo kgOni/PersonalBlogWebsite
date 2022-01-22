@@ -17,11 +17,6 @@ body {
     "footer";
 }
 
-aside {
-  grid-area: sidebar;
-  background-color: #007fff;
-}
-
 header {
   grid-area: header;
   background-color: #101010;
@@ -32,18 +27,27 @@ header {
 }
 
 .ih {
-  /* border: solid green; */
   grid-area: ih;
-  background-color: #101010;
-}
-.logo {
+  display: grid;
   height: 100%;
-  /* font-size: 100px ; */
-  /* border: solid white; */
-  /* text-align: center; */
-  display: table;
-  float: left;
+  align-self: center;
+  background-color: #101010;
   padding-left: 10px;
+}
+
+.ih h1 {
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 30px;
+  font-weight: 200;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ih h1 span {
+  color: white;
+  font-weight: 800;
 }
 
 .navbar li:last-child {
@@ -69,7 +73,7 @@ a {
   display: table;
   float: left;
   padding: 5px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .navbar a {
@@ -77,21 +81,6 @@ a {
   /* background-color: black; */
   border-radius: 15px;
   margin: 0px;
-}
-
-.logo h1 a {
-  color: white;
-  height: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 20px;
-  font-weight: 200;
-  font-family: "Montserrat", sans-serif;
-}
-
-.logo h1 a span {
-  color: white;
-  font-weight: 800;
 }
 
 .samplepost {
@@ -130,4 +119,9 @@ footer {
       "sidebar sect3"
       "sidebar footer ";
   }
+}
+
+aside {
+  grid-area: sidebar;
+  background-color: #007fff;
 }

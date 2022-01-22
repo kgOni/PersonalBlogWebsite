@@ -5,19 +5,19 @@
 }
 .business {
   padding: 5px;
-  grid-area: sect1;
+  grid-area: hsect1;
   background-color: #ededed;
 }
 .sport {
   padding: 5px;
-  grid-area: sect2;
+  grid-area: hsect2;
   /* background-color: #5E86AF; */
   background-color: #ededed;
   text-align: center;
 }
 .politics {
   padding: 5px;
-  grid-area: sect3;
+  grid-area: hsect3;
   background-color: #ededed;
   text-align: center;
 }
@@ -35,7 +35,6 @@
   border-bottom: 1px solid black;
   margin-bottom: 10px;
   font-family: serif;
-  /* box-shadow: 2px -2px 5px white;; */
 }
 .contentheadline {
   text-align: left;
