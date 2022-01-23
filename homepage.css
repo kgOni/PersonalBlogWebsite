@@ -41,6 +41,18 @@ html {
   font-weight: 50;
 }
 
+button {
+  /* text-align: center; */
+  height: 20px;
+  width: 200px;
+}
+
+.pic {
+  width: 100px;
+  height: 100px;
+  padding: 0px 20px 0px 20px;
+}
+
 @media only screen and (min-width: 850px) {
   .hbody {
     display: grid;
